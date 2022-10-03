@@ -1,0 +1,6 @@
+- name: install docker
+  hosts: managed_nodes
+  remote_user: ubuntu
+  become: true
+  roles:
+    - docker
